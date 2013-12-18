@@ -1,19 +1,20 @@
-#"from zeitgeist.vim - a Zeitgeist logger for Vim
+#"python taken from # from http://bazaar.launchpad.net/~zeitgeist-dataproviders/zeitgeist-datasources/git/view/head:/vim/zeitgeist.vim
+#"zeitgeist.vim - a Zeitgeist logger for Vim
 #"Author : Jonathan Lambrechts <jonathanlambrechts@gmail.com>
 
-## I have this in my ~/.bash_profile to copy terminal output
 import os
 import time
 import dbus
 import sys
-# Try to extract |prompt|command|args| from raw input from user as written to
-# the script -t typescript file.
+
+# Extract | prompt | command | args | from raw input.
 if(sys.argv[1]):
   
   MY_PROMPT = '$ '
   prompt = ''
   cmd = ''
   args = ''
+  # output = ''
   
   line = sys.argv[1].strip()
   prompt_index = line.find(MY_PROMPT)
@@ -24,10 +25,7 @@ if(sys.argv[1]):
     args = line[args_index:].strip().split(" ")
     cmd = args[0]
   
-  #print "PROMPT: ", prompt 
-  #print "COMMAND: ", cmd 
-  #print "ARGS: ", args  
-    
+  # TODO add more commands. For now only command cd triggers event.  
   if(cmd == 'cd'):
 
     try:
