@@ -10,14 +10,14 @@ Install:
 * sudo apt-get install gnome-activity-journal
 * Copy tailme.sh and zeitgeist_event.py to your home directory. Chmod +x maybe.
 * Add a line at the end of your .bash_profile: `source ./tailme.sh`
-* In zeitgeist.event, edit MY_PROMPT to be your bash prompt delimiter string.
+* In zeitgeist.event, edit `MY_PROMPT` to be your bash prompt delimiter string.
 * While there, notice only 'cd' command currently triggers event logging.
 
 Run:
 * Open Activity Journal by searching unity.
 * Open a bash terminal from the lauch bar.
-* Enter dir or ls -la, no event in Activity Journal.
-* Enter cd .., creates event in Activity Journal. 
+* Enter `dir` or `ls -la`, no event in Activity Journal.
+* Enter `cd ..`, creates event in Activity Journal. 
 
 Todo: Add more commands and investigate payload and other options.
 
