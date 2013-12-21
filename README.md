@@ -14,11 +14,11 @@ Install:
 * Copy tailme.sh and zeitgeist_event.py to your home directory. Chmod +x maybe.
 * In zeitgeist.event, edit `MY_PROMPT` to be your bash prompt delimiter string.
 * While there, notice only 'cd' command currently triggers event logging.
+* Add a line at the end of your ~/.bash_profile: `source ./tailme.sh`
 
 Run:
 * Open Activity Journal by searching unity.
 * Open a bash terminal.
-* Enter `source ./tailme.sh`
 * Enter `dir` or `ls -la`, no event in Activity Journal.
 * Enter `cd ..`, creates event in Activity Journal. 
 
