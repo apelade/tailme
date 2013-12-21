@@ -12,7 +12,7 @@ Developers use the bash terminal for some good stuff and it would be nice to rec
 Install:
 * sudo apt-get install gnome-activity-journal
 * Copy tailme.sh and zeitgeist_event.py to your home directory. Chmod +x maybe.
-* In zeitgeist.event, edit `MY_PROMPT` to be your bash prompt delimiter string.
+* In zeitgeist_event.py, edit `MY_PROMPT` to be your bash prompt delimiter string.
 * While there, notice only 'cd' command currently triggers event logging.
 * Add a line at the end of your ~/.bash_profile: `source ./tailme.sh`
 
